@@ -1230,6 +1230,7 @@ a:visited {
     }
     #back-to-top {
         right: 17px!important;
+        bottom: 14px!important;
     }
     /* Icons */
     .icon-button i {
