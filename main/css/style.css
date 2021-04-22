@@ -1228,6 +1228,9 @@ a:visited {
         border-radius: 1.6rem;
         margin: -0.8rem;
     }
+    #back-to-top {
+        right: 17px!important;
+    }
     /* Icons */
     .icon-button i {
         height: 1.6rem;
@@ -1831,7 +1834,7 @@ button {
 /* contact us */
 
 .address-icon {
-    font-size: 60px;
+    font-size: 50px;
 }
 
 i.address-icon {
