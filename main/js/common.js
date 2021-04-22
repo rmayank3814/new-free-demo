@@ -1,6 +1,28 @@
 (function($) {
     "use strict";
 
+    $(function() {
+        var header = $(".start-style");
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 5) {
+                header.removeClass('start-style ').addClass("scroll-on sticky-header bg-light ");
+
+            } else {
+                header.removeClass("scroll-on sticky-header bg-light ").addClass('start-style ');
+            }
+        });
+        $(window).on('load', function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 5) {
+                header.removeClass('start-style ').addClass("scroll-on sticky-header bg-light ");
+
+            } else {
+                header.removeClass("scroll-on sticky-header bg-light ").addClass('start-style ');
+            }
+        });
+    });
+
     $(document).ready(function() {
         var checkScrollBar = function() {
             $('.nav-link').css({
@@ -12,7 +34,7 @@
     });
     $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {
-            $(".top-bar").addClass("sticky-top");0
+            $(".top-bar").addClass("sticky-top");
         } else {
             $(".top-bar").removeClass("sticky-top");
         }
@@ -65,6 +87,9 @@ $body.on('click', '[data-dropdown-toggle]', (event) => {
     $($button).toggleClass("active");
 
 });
+
+
+
 
 
 /*scroll to top*/
