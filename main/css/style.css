@@ -1831,12 +1831,9 @@ button {
 /* contact us */
 
 .address-icon {
-    height: 70px;
+    font-size: 60px;
 }
 
-
-/* .about .lead {
-    color: #4353ff;
-    font-size: 14px;
-    font-weight: bold;
-} */
+i.address-icon {
+    color: #0044aa;
+}
